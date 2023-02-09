@@ -12,9 +12,7 @@ public class DeliveryProvider {
     }
 
     public DeliveryProvider(){
-
     }
-
 
     public int getId() {
         return id;
@@ -31,6 +29,4 @@ public class DeliveryProvider {
     public void setProviderName(String providerName) {
         this.providerName = providerName;
     }
-
-
 }

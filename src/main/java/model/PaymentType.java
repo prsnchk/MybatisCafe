@@ -9,8 +9,7 @@ public class PaymentType {
         this.name = name;
     }
 
-    public PaymentType(){
-
+    public PaymentType() {
     }
 
     public int getId() {

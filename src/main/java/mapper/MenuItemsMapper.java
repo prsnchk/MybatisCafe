@@ -1,10 +1,8 @@
 package mapper;
 
 import model.MenuItems;
-import model.PaymentType;
 import org.apache.ibatis.annotations.*;
 
-import java.util.List;
 import java.util.Map;
 
 public interface MenuItemsMapper {

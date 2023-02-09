@@ -1,10 +1,8 @@
 package mapper;
 
 import model.DeliveryProvider;
-
 import org.apache.ibatis.annotations.*;
 
-import java.util.List;
 import java.util.Map;
 
 public interface DeliveryProviderMapper {

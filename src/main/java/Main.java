@@ -1,16 +1,10 @@
 import model.*;
 import service.*;
 
-import javax.swing.text.EditorKit;
-
-
 public class Main {
 
     public static void main(String[] args) {
-
-
-
-    //PaymentType
+        //PaymentType
         PaymentTypeService paymentTypeService = new PaymentTypeService();
         //GET
         PaymentType paymentType2 = paymentTypeService.getPaymentTypeById(2);
@@ -28,13 +22,13 @@ public class Main {
         paymentTypeService.deletePaymentType(paymentType3);
         System.out.println(paymentTypeService.getAllPaymentType().toString());
 
-    //CAFE
+        //CAFE
         CafeService cafeService = new CafeService();
         //GET
         Cafe cafe2 = cafeService.getCafeById(2);
         System.out.println(cafe2);
         //SAVE
-        Cafe cafe4 = new Cafe(4,"Osmantus");
+        Cafe cafe4 = new Cafe(4, "Osmantus");
         cafeService.insertCafe(cafe4);
         //GET ALL
         System.out.println(cafeService.getAllCafe());
@@ -45,14 +39,14 @@ public class Main {
         //DELETE
         cafeService.deleteCafe(cafe4);
 
-    //Courier
+        //Courier
         CourierService courierService = new CourierService();
         //GET
         Courier courier2 = courierService.getCourierById(2);
         System.out.println(courier2);
         //SAVE
-        Courier courier5 = new Courier(5,"Володимир","Зеленський");
-        CourierService.insert(courier5);
+        Courier courier5 = new Courier(5, "Володимир", "Зеленський");
+        courierService.insertCourier(courier5);
         //GET All
         System.out.println(courierService.getAllCourier());
         //EDIT
@@ -62,13 +56,13 @@ public class Main {
         //DELETE
         courierService.deleteCourier(courier5);
 
-    //Customer
+        //Customer
         CustomerService customerService = new CustomerService();
         //GET
         Customer customer2 = customerService.getCustomerById(2);
         System.out.println(customer2);
         //SAVE
-        Customer customer5 = new Customer(5,"Поплава", "Ніякая","0933981409", "kdnjkksjsk@gmail.com");
+        Customer customer5 = new Customer(5, "Поплава", "Ніякая", "0933981409", "kdnjkksjsk@gmail.com");
         customerService.insertCustomer(customer5);
         //GET ALL
         System.out.println(customerService.getAllCustomer());
@@ -79,13 +73,13 @@ public class Main {
         //DeLEtE
         customerService.deleteCustomer(customer5);
 
-    //MenuItems
+        //MenuItems
         MenuItemsService menuItemsService = new MenuItemsService();
         //GET
         MenuItems menuItems2 = menuItemsService.getMenuItemsById(2);
         System.out.println(menuItems2);
         //Save
-        MenuItems menuItems5 = new MenuItems(5,"Гусениця","Gusenitsya",140);
+        MenuItems menuItems5 = new MenuItems(5, "Гусениця", "Gusenitsya", 140);
         menuItemsService.insertMenuItems(menuItems5);
         //Get all
         System.out.println(menuItemsService.getAllMenuItems());
@@ -95,8 +89,5 @@ public class Main {
         System.out.println(menuItemsService.getMenuItemsById(5));
         //delete
         menuItemsService.deleteMenuItems(menuItems5);
-
-
-
     }
 }

@@ -12,7 +12,7 @@ public class Courier {
         this.lastName = lastName;
     }
 
-    public Courier(){
+    public Courier() {
     }
 
     public int getId() {

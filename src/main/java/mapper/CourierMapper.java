@@ -1,11 +1,8 @@
 package mapper;
 
 import model.Courier;
-
-
 import org.apache.ibatis.annotations.*;
 
-import java.util.List;
 import java.util.Map;
 
 public interface CourierMapper {

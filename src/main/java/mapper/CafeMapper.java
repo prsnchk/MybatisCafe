@@ -1,10 +1,8 @@
 package mapper;
 
 import model.Cafe;
-
 import org.apache.ibatis.annotations.*;
 
-import java.util.List;
 import java.util.Map;
 
 public interface CafeMapper {

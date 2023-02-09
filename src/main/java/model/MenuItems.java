@@ -15,9 +15,8 @@ public class MenuItems {
         this.price = price;
     }
 
-    public MenuItems (){
+    public MenuItems() {
     }
-
 
     public int getMenuId() {
         return menuId;
@@ -27,7 +26,6 @@ public class MenuItems {
         this.menuId = menuId;
     }
 
-
     public String getNameUkr() {
         return nameUkr;
     }
@@ -36,7 +34,6 @@ public class MenuItems {
         this.nameUkr = nameUkr;
     }
 
-
     public String getNameEng() {
         return nameEng;
     }
@@ -44,7 +41,6 @@ public class MenuItems {
     public void setNameEng(String nameEng) {
         this.nameEng = nameEng;
     }
-
 
     public int getPrice() {
         return price;
@@ -56,12 +52,7 @@ public class MenuItems {
 
     @Override
     public String toString() {
-        return "{" +
-                "menuId='" + menuId + '\'' +
-                ", nameUkr='" + nameUkr + '\'' +
-                ", nameEng='" + nameEng + '\'' +
-                ", price='" + price + '\'' +
-                '}';
+        return "{" + "menuId='" + menuId + '\'' + ", nameUkr='" + nameUkr + '\'' + ", nameEng='" + nameEng + '\'' + ", price='" + price + '\'' + '}';
     }
 
     @Override
